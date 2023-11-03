@@ -1,0 +1,17 @@
+.left-linear,
+.right-linear {
+    position: absolute;
+    height: 150%;
+    width: 32.3%;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    z-index: -1;
+}
+
+.left-linear {
+    left: 20px;
+}
+
+.right-linear {
+    right: 20px;
+}

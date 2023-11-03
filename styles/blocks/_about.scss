@@ -1,0 +1,39 @@
+.about {
+    margin-bottom: 96px;
+    padding-top: 151px;
+    padding-bottom: 151px;
+    background-color: $main-color;
+
+    & .center-container {
+        position: relative;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1085px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__item-up {
+        margin-bottom: 16px;
+        color: $second-color;
+        font-size: 85px;
+        line-height: 106px;
+        font-family: $second-font-family;
+        letter-spacing: 0.02em;
+    }
+
+    &__item-down {
+        color: $main-text-color;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.01em;
+    }
+}

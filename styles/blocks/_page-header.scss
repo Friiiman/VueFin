@@ -1,0 +1,14 @@
+.page-header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 44px 20px 57px;
+
+    &__logo {
+        max-height: 50px;
+    }
+}
