@@ -36,5 +36,9 @@
         &:hover {
             background-color: $second-color;
         }
+
+        & svg {
+            margin-left: 5px;
+        }
     }
 }

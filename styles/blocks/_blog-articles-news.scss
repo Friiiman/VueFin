@@ -1,0 +1,30 @@
+.blog-articles-news {
+    position: relative;
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto 200px;
+
+    & .linear {
+        height: 120%;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        font-size: 50px;
+        line-height: 62px;
+        letter-spacing: 0.02em;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 27px;
+        margin-bottom: 21px;
+
+        & .articles-news-card {
+            margin-bottom: 30px;
+        }
+    }
+}

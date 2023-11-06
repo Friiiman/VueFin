@@ -1,0 +1,39 @@
+.blog-promo {
+    height: 356px;
+    margin-bottom: 200px;
+    background-image: url(../styles/img/blog-promo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    & .center-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+
+    & .linear {
+        top: 0;
+    }
+
+    &__content {
+        padding: 41px 78px;
+        text-align: center;
+        background-color: $white-color;
+        border-radius: 37px 37px 0 0;
+    }
+
+    &__title {
+        font-size: 50px;
+        line-height: 62px;
+    }
+
+    &__text {
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.01em;
+    }
+}

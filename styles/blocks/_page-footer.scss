@@ -2,15 +2,21 @@
     position: relative;
     display: flex;
     flex-direction: row;
+    gap: 20px;
     max-width: 1240px;
-    margin: 0 auto 130px;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 0 20px 110px;
+
+    & .linear {
+        height: 100%;
+    }
 
     &__social {
-        min-width: 400px;
+        min-width: 40%;
     }
 
     &__social-text {
+        max-width: 393px;
         margin-bottom: 31px;
         font-size: 22px;
         line-height: 33px;
@@ -33,7 +39,6 @@
     }
 
     &__nav {
-        padding-left: 100px;
         width: 100%;
     }
 
@@ -73,20 +78,21 @@
     &__contact-text {
         display: flex;
         flex-direction: column;
+        max-width: 258px;
         font-size: 22px;
         letter-spacing: 0.01em;
     }
 
     &__contact-address {
-        margin-bottom: 15px;
+        margin-bottom: 38px;
     }
 
-    &__contact-mail,
-    &__contact-phone {
-        line-height: 66px;
+    &__contact-mail:hover,
+    &__contact-phone:hover {
+        color: $second-color;
+    }
 
-        &:hover {
-            color: $second-color;
-        }
+    &__contact-mail {
+        margin-bottom: 33px;
     }
 }
