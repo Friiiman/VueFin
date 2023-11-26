@@ -22,6 +22,14 @@
   font-weight: 400;
   src: url("../styles/fonts/dm-serif-display-v15-latin-regular.woff2") format("woff2");
 }
+/* dm-serif-display-italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: "DM Serif Display";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../styles/fonts/dm-serif-display-v15-latin-italic.woff2") format("woff2");
+}
 * {
   margin: 0;
   padding: 0;
@@ -604,6 +612,191 @@ img {
 }
 .blog-articles-news__cards .articles-news-card {
   margin-bottom: 30px;
+}
+
+.blog-details .center-container {
+  position: relative;
+  height: 100%;
+}
+.blog-details .center-container .linear {
+  height: 160%;
+}
+.blog-details__header-img {
+  position: relative;
+  margin-bottom: 200px;
+  height: 350px;
+  background-image: url(../styles/img/blog-details/blog-details-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.blog-details-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 52px;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px 96px;
+}
+.blog-details-content .linear {
+  height: 100%;
+}
+.blog-details-content__articles {
+  max-width: 800px;
+}
+.blog-details-content__tags {
+  max-width: 345px;
+}
+.blog-details-content__tags-title {
+  margin-bottom: 24px;
+  font-size: 25px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+}
+.blog-details-content__tags-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.blog-details-content__tags-button {
+  padding: 9px 30px;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  background-color: #F4F0EC;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.blog-details-content__tags-button--active {
+  background-color: #292F36;
+  color: #fff;
+}
+.blog-details-content__tags-button:hover {
+  background-color: #292F36;
+  color: #fff;
+}
+.blog-details-content__tags-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blog-details-content__tags-item {
+  position: relative;
+  font-size: 22px;
+  cursor: pointer;
+}
+.blog-details-content__tags-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+}
+.blog-details-content__tags-item[open] summary {
+  color: #CDA274;
+}
+.blog-details-content__tags-item summary {
+  padding-left: 15px;
+  color: #292F36;
+  list-style: none;
+}
+.blog-details-content__tags-text {
+  padding-left: 15px;
+  font-size: 16px;
+  cursor: auto;
+}
+
+.blog-details-card:not(:last-child) {
+  margin-bottom: 27px;
+}
+.blog-details-card__title {
+  margin-bottom: 21px;
+  font-size: 50px;
+  line-height: 62px;
+  letter-spacing: 0.02em;
+}
+.blog-details-card__image {
+  margin-bottom: 48px;
+}
+.blog-details-card__img {
+  margin-bottom: 46px;
+  border-radius: 50px;
+}
+.blog-details-card__image-desc {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+.blog-details-card__breadcrumbs {
+  margin-right: 70px;
+}
+.blog-details-card__text {
+  margin-bottom: 35px;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+}
+.blog-details-card__text:last-child {
+  margin-bottom: 0;
+}
+.blog-details-card__blockquote {
+  padding-top: 70px;
+  padding-bottom: 53px;
+  text-align: center;
+  background-color: #F4F0EC;
+  font-size: 25px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  border-radius: 50px;
+}
+.blog-details-card__blockquote p {
+  font-family: "DM Serif Display";
+  color: #CDA274;
+  font-style: italic;
+}
+.blog-details-card__list {
+  counter-reset: my-counter;
+  margin-bottom: 44px;
+  list-style-type: none;
+}
+.blog-details-card__list p {
+  margin-bottom: 24px;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+}
+.blog-details-card__list-item {
+  position: relative;
+  max-width: 732px;
+  margin-left: 19px;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+}
+.blog-details-card__list-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.blog-details-card__list-item::before {
+  position: absolute;
+  content: counter(my-counter);
+  counter-increment: my-counter;
+  top: 2px;
+  left: -18px;
+  color: #CDA274;
+  font-family: "DM Serif Display";
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+}
+.blog-details-card__img-second {
+  margin-bottom: 35px;
+  border-radius: 50px;
 }
 
 .pagination {

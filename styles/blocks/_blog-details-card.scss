@@ -1,0 +1,106 @@
+.blog-details-card {
+
+    &:not(:last-child) {
+        margin-bottom: 27px;
+    }
+
+    &__title {
+        margin-bottom: 21px;
+        font-size: 50px;
+        line-height: 62px;
+        letter-spacing: 0.02em;
+    }
+
+    &__image {
+        margin-bottom: 48px;
+    }
+
+    &__img {
+        margin-bottom: 46px;
+        border-radius: 50px;
+    }
+
+    &__image-desc {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+    }
+
+    &__breadcrumbs {
+        margin-right: 70px;
+    }
+
+    &__text {
+        margin-bottom: 35px;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.01em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__blockquote {
+        padding-top: 70px;
+        padding-bottom: 53px;
+        text-align: center;
+        background-color: $main-color;
+        font-size: 25px;
+        line-height: 31px;
+        letter-spacing: 0.02em;
+        border-radius: 50px;
+
+        & p {
+            font-family: 'DM Serif Display';
+            color: $second-color;
+            font-style: italic;
+        }
+    }
+
+    &__list {
+        counter-reset: my-counter;
+        margin-bottom: 44px;
+        list-style-type: none;
+
+        & p {
+            margin-bottom: 24px;
+            font-size: 22px;
+            line-height: 33px;
+            letter-spacing: 0.01em;
+        }
+    }
+
+    &__list-item {
+        position: relative;
+        max-width: 732px;
+        margin-left: 19px;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.01em;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+        &::before {
+            position: absolute;
+            content: counter(my-counter);
+            counter-increment: my-counter;
+            top: 2px;
+            left: -18px;
+            color: $second-color;
+            font-family: 'DM Serif Display';
+            font-size: 20px;
+            line-height: 25px;
+            font-style: normal;
+        }
+    }
+
+    &__img-second {
+        margin-bottom: 35px;
+        border-radius: 50px;
+    }
+}
